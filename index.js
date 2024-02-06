@@ -81,7 +81,112 @@ function picnicBudget(man){
         return result;
     }
 }
-console.log(
-picnicBudget(true)
+// console.log(
+// picnicBudget(true)
 
-)
+// )
+
+
+
+
+
+
+// let math = parseInt(Math.random() * 20 + 11);
+// console.log(math)
+
+
+
+function random (min,max){
+    let ran = Math.floor(Math.random() * (max - min + 1)) + min  ;
+    return ran
+}
+// console.log(
+// random(1, 6)
+
+// )
+
+
+
+const studentNames = [
+    "Alice",
+    "Emma",
+    "Jack",
+    "Bob",
+    "David",
+    "Charlie",
+    "Frank",
+    "Ivy",
+    "Henry",
+    "Grace",
+    "Grace",
+];
+
+function student (studentNames){
+    let student = studentNames.sort()
+    // console.log(student)
+}
+student(studentNames)
+
+
+
+
+let name = [1,4,53,43,11,54,5,67,85];
+function classRoll (roll){
+  let result  = roll.sort(function(a,b){
+    return b -a ;
+  })
+  return result;
+}
+
+// console.log(
+// classRoll(name)
+// )
+
+
+
+// leap years 
+function leapYears(year){
+    if(year % 400 !== 0 || (year % 4 === 0 && year % 100 !== 0)){
+        return `Year is a leap ${year}`
+    }else{
+        return `Year is not leap ${year}`
+    }
+
+}
+
+// console.log(leapYears(2026))
+
+
+
+let sentence = "Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.";
+
+function vowelsCheck (sentence){
+    // console.log(sentence)
+    let count = 0;
+
+    let vowel = ["a", "e", "i", "o", "u"]
+    for(let i=0; i<sentence.length; i++){
+        if(vowel.includes(sentence[i])){
+            count++;
+        }
+     }
+    // console.log(count)
+
+    }
+
+
+
+vowelsCheck(sentence)
+
+
+
+let array = [1,2,3,4,5,1,2,3]
+function dublicate(arr){
+    for(let i=0; i<arr.length; i++){
+        for(let j =  1; j<arr.length; j++){
+            
+        }
+    }
+
+}
+dublicate(array)
