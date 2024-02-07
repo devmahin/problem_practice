@@ -361,10 +361,24 @@ function findAveragePhonePrice (phones){
 // )
 
 const employees = [
-    { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
     { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
     { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
+    { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
     { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
 ];
 
 
+function employeesFun(empl){
+    let start = 0;
+    let inc = 0;
+    for(let i=0; i<empl.length; i++){
+        start += empl[i].starting;
+        inc += empl[i].experience * empl[i].increment;
+    }
+    return inc + start;
+}
+console.log(
+    
+    employeesFun(employees)
+
+)
