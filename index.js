@@ -369,9 +369,18 @@ const employees = [
 
 
 function employeesFun(empl){
+    if(typeof empl !== "object" || empl <= 0){
+        return "Please submit object submit";
+    }
     let start = 0;
     let inc = 0;
     for(let i=0; i<empl.length; i++){
+
+        if(typeof empl[i].increment !== "number" || typeof empl[i].starting !== "number" || typeof empl[i].experience !== "number"){
+            return "Salary please valid number"
+        }
+
+
         start += empl[i].starting;
         inc += empl[i].experience * empl[i].increment;
     }
@@ -382,3 +391,6 @@ console.log(
     employeesFun(employees)
 
 )
+
+
+
