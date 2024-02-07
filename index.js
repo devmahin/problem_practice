@@ -395,14 +395,25 @@ function employeesFun(empl){
 
 // Task-1:
 // Write a function to convert temperature from Celsius to Fahrenheit.
-let Celsius = 20;
+let Celsius = 54;
 
 function fahrenheitConvar (Celsius){
     let F = (Celsius * 9/5) + 32 ;
     return F;
 
 }
-console.log(
-fahrenheitConvar(Celsius)
+// console.log(
+// fahrenheitConvar(Celsius)
+// )
 
-)
+// You are given an array of numbers. Count how many times the a number is repeated in the array.
+
+// sample-input: 
+
+// find: 5
+
+// output: 2
+
+let numbers = [5,6,11,12,98, 5];
+
+
