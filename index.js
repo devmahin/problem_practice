@@ -386,11 +386,23 @@ function employeesFun(empl){
     }
     return inc + start;
 }
-console.log(
+// console.log(
     
-    employeesFun(employees)
+//     employeesFun(employees)
+
+// )
+
+
+// Task-1:
+// Write a function to convert temperature from Celsius to Fahrenheit.
+let Celsius = 20;
+
+function fahrenheitConvar (Celsius){
+    let F = (Celsius * 9/5) + 32 ;
+    return F;
+
+}
+console.log(
+fahrenheitConvar(Celsius)
 
 )
-
-
-
