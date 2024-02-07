@@ -256,11 +256,11 @@ function CapitalizeFun(sentence){
     let CapitalizeSpace = sen.join(" ")
     return CapitalizeSpace
 }
-console.log(
+// console.log(
 
-CapitalizeFun(Capitalize)
+// CapitalizeFun(Capitalize)
 
-)
+// )
 
 
 
@@ -284,5 +284,87 @@ CapitalizeFun(Capitalize)
 // console.log(wordsCap)
 
 
+
+// Task -1:
+// Find the lowest number in the array below.
+const heights2 = [167, 190, 165, 137, 4];
+function lowestNumber(NUM){
+    if(!Array.isArray(NUM) || NUM < 0 ){
+        return false
+    }
+    let num = NUM[0];
+    for (let i=0; i<NUM.length; i++){
+        if(typeof NUM[i] !== "number"){
+            return "please number value return"
+        }
+
+        if(NUM[i] < num){
+            num = NUM[i];
+        }
+    }
+    return num;
+}
+// console.log(lowestNumber(heights2))
+
+
+
+
+// Find the friend with the smallest name.
+const longestString = ['rahim', 'robin', 'rafi', 'ron', 'rashed', "r3", "a"];
+
+function stringSend(string){
+    let strings = string[0];
+        for(let i=0; i<string.length; i++){
+            if(string[i].length < strings.length){
+                strings = string[i]
+            }
+        }
+    return strings;
+}
+
+// console.log(
+//     stringSend(longestString)
+
+
+// )
+
+
+
+const phones = [
+    { model: "PhoneA", brand: "Iphone", price: 95000 },
+    { model: "PhoneB", brand: "Samsung", price: 40000 },
+    { model: "PhoneC", brand: "Oppo", price: 26000 },
+    { model: "PhoneD", brand: "Nokia", price: 35000 },
+    { model: "PhoneE", brand: "Iphone", price: 105000 },
+    { model: "PhoneF", brand: "HTC", price: 48000 },
+];
+
+
+function findAveragePhonePrice (phones){
+    if(phones.length <= 0){
+        return "Please submit object value"
+    }
+    let total = 0;
+    let len = phones.length;
+    // console.log(len)
+    for(let i=0; i<phones.length; i++){
+            total += phones[i].price;
+            
+    }
+    // let totals = total . 
+    return total / len;
+
+}
+// console.log(
+// findAveragePhonePrice(phones)
+
+// )
+
+const employees = [
+    { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
+    { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
+    { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
+    { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
+];
 
 
